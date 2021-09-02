@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Books World</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="text-center text-success fw-bold mt-5">Which Book?</h1>
+
+        <blockquote class="text-center">WhichBook is a mood-oriented book suggester web app for when you
+            need just the right book for
+            just the right mood</blockquote>
+
+
+
+        <!-- serch button  -->
+        <div class="input-group mb-3 w-50 mx-auto mt-4">
+            <input id="search-field" type="text" class="form-control" placeholder="Search your book name"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-danger" type="button" id="button-search">Search</button>
+        </div>
+
+        <!-- how many books  -->
+        <h4 class="text-center mt-3" id="books-count"></h4>
+
+
+        <!-- main results  -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 m-5">
+            <!-- <article class="d-flex justify-content-center container-fluid pt-5">
+
+                <div class="spinner-grow me-2" style="width: 1.5rem; height: 1.5rem;" role="status"></div>
+                <div class="spinner-grow me-2" style="width: 1.5rem; height: 1.5rem;" role="status"></div>
+                <div class="spinner-grow" style="width: 1.5rem; height: 1.5rem;" role="status"></div>
+
+            </article> -->
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
